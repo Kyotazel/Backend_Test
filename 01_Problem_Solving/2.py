@@ -1,6 +1,6 @@
 # Buat inputan number dan jadikan ke strinf
-number = int(input("x = "))
-number = str(number)
+number = str(input("x = "))
+
 
 # buat list kosong dan ukuran number
 reversed_string = []
@@ -15,7 +15,7 @@ while index > 0:
 reversed_string = ''.join(reversed_string)
 
 # cek apabila sama maka True apabila tidak sama maka False
-if number == reversed_string:
+if number == reversed_string and len(reversed_string) != 1:
     print(True)
 else:
     print(False)
